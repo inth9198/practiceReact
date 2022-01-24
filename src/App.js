@@ -24,7 +24,7 @@ function App() {
   }
   return (
     <div className="App">
-      <h2>오늘 일정</h2>
+      <h2 id="head">2022 민호가 할 일들</h2>
       <form onSubmit={onSubmit}>
       <input
         onChange={onChange}
@@ -34,9 +34,11 @@ function App() {
       />
       </form>
       <hr />
-      {toDos.map((item, index)=>(
-        <li key={index}>{item}</li>
-      )) }
+      {
+      toDos.map((item, index)=>(
+        <li className="list" key={index}>{item}</li>
+      )) 
+      }
       <div className="toDoList"></div>
     </div>
   );

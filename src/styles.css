@@ -6,4 +6,14 @@ body {
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: #ffffff;
     height: 100%;
+    text-align: center;
+}
+#head{
+    position: relative;
+    color: cornflowerblue;
+}
+.list {
+  text-align: left;
+  position: relative;
+  left: 41%;
 }
